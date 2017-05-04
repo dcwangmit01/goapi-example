@@ -1,0 +1,39 @@
+syntax = "proto3";
+package pb;
+
+import "google/api/annotations.proto";
+
+// Syntax defined in
+//   https://github.com/googleapis/googleapis/blob/master/google/api/http.proto
+
+message KeyValMessage {
+  string key = 1;
+  string value = 2;
+}
+
+service KeyVal {
+  rpc KeyValCreate(KeyValMessage) returns (KeyValMessage) {
+    option (google.api.http) = {
+      put: "/v1/keyval/{key}"
+      body: "*"
+    };
+  }
+  rpc KeyValRead(KeyValMessage) returns (KeyValMessage) {
+    option (google.api.http) = {
+      get: "/v1/keyval/{key}"
+      // body: none, drop the value
+    };
+  }
+  rpc KeyValUpdate(KeyValMessage) returns (KeyValMessage) {
+    option (google.api.http) = {
+      post: "/v1/keyval/{key}"
+      body: "*"
+    };
+  }
+  rpc KeyValDelete(KeyValMessage) returns (KeyValMessage) {
+  option (google.api.http) = {
+      delete: "/v1/keyval/{key}"
+      // body: none, drop the value
+    };
+  }
+}
