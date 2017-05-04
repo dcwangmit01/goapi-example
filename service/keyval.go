@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/dcwangmit01/goapi/config"
 	pb "github.com/dcwangmit01/goapi-example/pb"
+	"github.com/dcwangmit01/goapi/config"
 	"github.com/dcwangmit01/goapi/registry"
 	"github.com/dcwangmit01/goapi/sqlitekv"
 )

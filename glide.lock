@@ -1,10 +1,10 @@
 hash: 0082a296533d56785f8eba4bb946186b35087bc289c701108ac74c32ea90314a
-updated: 2017-05-04T04:51:36.486896257Z
+updated: 2017-05-04T06:01:08.336731244Z
 imports:
 - name: github.com/cloudflare/cfssl
   version: db0d0650b6496bfe8061ec56a92edd32d8e75c30
 - name: github.com/dcwangmit01/goapi
-  version: 99e47844dcfee157286f0b16387612799adca733
+  version: d88a7ff1b7121d79dc797f1f94a8e47e739b3684
   subpackages:
   - client
   - config
@@ -126,7 +126,7 @@ imports:
 - name: github.com/pelletier/go-buffruneio
   version: c37440a7cf42ac63b919c752ca73a85067e05992
 - name: github.com/pelletier/go-toml
-  version: fe206efb84b2bc8e8cfafe6b4c1826622be969e3
+  version: 97253b98df84f9eef872866d079e74b8265150f1
 - name: github.com/satori/go.uuid
   version: 879c5887cd475cd7864858769793b2ceb0d44feb
 - name: github.com/Sirupsen/logrus

@@ -5,12 +5,12 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/dcwangmit01/goapi-example/resources/certs"
 	"github.com/dcwangmit01/goapi/config"
-	"github.com/dcwangmit01/goapi/resources/certs"
 	"github.com/dcwangmit01/goapi/util"
 
-	"github.com/dcwangmit01/goapi/client"
 	pb "github.com/dcwangmit01/goapi-example/pb"
+	"github.com/dcwangmit01/goapi/client"
 )
 
 func init() {
